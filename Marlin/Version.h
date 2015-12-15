@@ -29,20 +29,20 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "1.1.0-RC6"
+#define SHORT_BUILD_VERSION "1.1.0-RC6-bbp"
 
 /**
  * Verbose version identifier which should contain a reference to the location
  * from where the binary was downloaded or the source code was compiled.
  */
-#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION " (Github)"
+#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION "(metajack/marlin-bigboxpro)"
 
 /**
  * The STRING_DISTRIBUTION_DATE represents when the binary file was built,
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-#define STRING_DISTRIBUTION_DATE "2016-04-24 12:00"
+#define STRING_DISTRIBUTION_DATE "2016-05-03 14:33"
 
 /**
  * @todo: Missing documentation block
@@ -60,7 +60,7 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-#define SOURCE_CODE_URL "https://github.com/MarlinFirmware/Marlin"
+#define SOURCE_CODE_URL "https://github.com/metajack/marlin-bigboxpro"
 
 /**
  * Default generic printer UUID.

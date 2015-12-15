@@ -1,6 +1,12 @@
-# Marlin 3D Printer Firmware
+# Marlin 3D Printer Firmware - Modified for BigBox
+
+__This is a version of Marlin for the BigBox Pro__
+
+This contains the BigBox changes to 1.1.0-RC3 rebased on top of 1.1.0-RC6.
+
 <img align="top" width=175 src="Documentation/Logo/Marlin%20Logo%20GitHub.png" />
- Additional documentation can be found in [The Marlin Wiki](https://github.com/MarlinFirmware/Marlin/wiki).
+ Additional documentation about the BigBox can be found on [our wiki](http://wiki.e3d-online.com/wiki/BigBox_Build_Manual).
+ Additional documentation about marlin can be found on the [marlin wiki](https://github.com/MarlinFirmware/Marlin/wiki).
 
 ## Release Candidate -- Marlin 1.1.0-RC6 - 24 April 2016
 
