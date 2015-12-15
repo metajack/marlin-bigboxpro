@@ -805,9 +805,9 @@
 // The Z2 axis, if any, should be the next open extruder port
 #if ENABLED(Z_DUAL_STEPPER_DRIVERS)
   #ifndef Z2_STEP_PIN
-    #define Z2_STEP_PIN   _EPIN(Z2_E_INDEX, STEP)
-    #define Z2_DIR_PIN    _EPIN(Z2_E_INDEX, DIR)
-    #define Z2_ENABLE_PIN _EPIN(Z2_E_INDEX, ENABLE)
+    #define Z2_STEP_PIN   29 // _EPIN(Z2_E_INDEX, STEP)
+    #define Z2_DIR_PIN    28 // _EPIN(Z2_E_INDEX, DIR)
+    #define Z2_ENABLE_PIN 39 // _EPIN(Z2_E_INDEX, ENABLE)
     #ifndef Z2_CS_PIN
       #define Z2_CS_PIN   _EPIN(Z2_E_INDEX, CS)
     #endif

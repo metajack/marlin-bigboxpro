@@ -54,7 +54,7 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN  32
+  #define Z_MIN_PROBE_PIN  33
 #endif
 
 //
@@ -80,21 +80,26 @@
 #define E1_DIR_PIN         25
 #define E1_ENABLE_PIN      27
 
-#define E2_STEP_PIN        29
-#define E2_DIR_PIN         28
-#define E2_ENABLE_PIN      39
+// E3D BigBox Dual Z
+/* #define E2_STEP_PIN        29 */
+/* #define E2_DIR_PIN         28 */
+/* #define E2_ENABLE_PIN      39 */
 
 //
 // Temperature Sensors
 //
 #if TEMP_SENSOR_0 == -1
   #define TEMP_0_PIN        6   // Analog Input (connector *K1* on RUMBA thermocouple ADD ON is used)
+#elif TEMP_SENSOR_0 == 20       // E3D PT100
+  #define TEMP_0_PIN       10   // ANALOG NUMBERING
 #else
   #define TEMP_0_PIN       15   // Analog Input (default connector for thermistor *T0* on rumba board is used)
 #endif
 
 #if TEMP_SENSOR_1 == -1
   #define TEMP_1_PIN        5   // Analog Input (connector *K2* on RUMBA thermocouple ADD ON is used)
+#elif TEMP_SENSOR_1 == 20       // E3D PT100
+  #define TEMP_1_PIN        9   // ANALOG NUMBERING
 #else
   #define TEMP_1_PIN       14   // Analog Input (default connector for thermistor *T1* on rumba board is used)
 #endif
@@ -157,8 +162,8 @@
 #define SD_DETECT_PIN      49
 #define BEEPER_PIN         44
 #define LCD_PINS_D7        40
-#define BTN_EN1            11
-#define BTN_EN2            12
+#define BTN_EN1            12
+#define BTN_EN2            11
 #define BTN_ENC            43
 
 #if ENABLED(MKS_12864OLED) || ENABLED(MKS_12864OLED_SSD1306)
