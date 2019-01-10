@@ -426,7 +426,7 @@
  * Max Bed Power
  * Applies to all forms of bed control (PID, bang-bang, and bang-bang with hysteresis).
  * When set to any value below 255, enables a form of PWM to the bed that acts like a divider
- * so don't use it unless you are OK with PWM on your bed. (See the comment on enabling PIDTEMPBED)
+ * so don't use it unless yo‡u are OK with PWM on your bed. (See the comment on enabling PIDTEMPBED)
  */
 #define MAX_BED_POWER 255 // limits duty cycle to bed; 255=full current
 
@@ -441,9 +441,10 @@
   //#define  DEFAULT_bedKd 305.4
 
   //E3D BigBox Variable Power Density Heated Bed (24V)
-  #define  DEFAULT_bedKp 241.45
-  #define  DEFAULT_bedKi 45.35
-  #define  DEFAULT_bedKd 321.40
+
+#define DEFAULT_bedKp 365.44
+#define DEFAULT_bedKi 71.94
+#define DEFAULT_bedKd 464.07
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
