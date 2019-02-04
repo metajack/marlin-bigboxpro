@@ -32,7 +32,7 @@
 
 #if ENABLED(SHOW_BOOTSCREEN)
 
-  #define START_BMPHIGH // Costs 399 bytes more flash
+  //#define START_BMPHIGH // Costs 399 bytes more flash
 
   #if ENABLED(SHOW_CUSTOM_BOOTSCREEN)
 
